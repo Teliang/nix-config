@@ -4,4 +4,5 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   core-packages = import ./core-packages.nix;
+  plasma = import ./gnome.nix;
 }
