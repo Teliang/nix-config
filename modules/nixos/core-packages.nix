@@ -14,7 +14,7 @@
     joplin-desktop
     vscode
     google-chrome
-    #  dbeaver-bin
+    dbeaver-bin
     anki-bin
     android-studio
     mpv
@@ -28,7 +28,7 @@
     vlc
     arduino
     alacritty
-    #  dconf-editor
+    dconf-editor
 
     jdk
     nodejs
@@ -36,8 +36,8 @@
     rustc
     cargo
     php
-    #  python315
-    #  python314
+    python315
+    python314
     python312
     python311
     python310
@@ -67,6 +67,6 @@
 
     gnomeExtensions.gsconnect
     gnomeExtensions.appindicator
-    #  gnomeExtensions.bing-wallpaper
+    gnomeExtensions.bing-wallpaper
   ];
 }
