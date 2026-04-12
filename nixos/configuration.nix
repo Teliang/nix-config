@@ -25,6 +25,14 @@
     ./hardware-configuration.nix
   ];
 
+  # Bootloader.
+ boot.loader.systemd-boot.enable = true;
+ boot.loader.efi.canTouchEfiVariables = true;
+
+#  boot.loader.grub.enable = true;
+#  boot.loader.grub.device = "nodev";
+#  boot.loader.grub.useOSProber = true;
+
   nixpkgs = {
     # You can add overlays here
     overlays = [
