@@ -3,4 +3,7 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
+  mpv = import ./mpv.nix;
+  git = import ./git.nix;
+  neovim = import ./neovim.nix;
 }

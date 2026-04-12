@@ -69,4 +69,9 @@
     gnomeExtensions.appindicator
     gnomeExtensions.bing-wallpaper
   ];
+  programs.java.enable = true;
+
+  virtualisation.docker = {
+    enable = true;
+  };
 }

@@ -11,6 +11,9 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
     # inputs.self.homeManagerModules.example
+    inputs.self.homeManagerModules.mpv
+    inputs.self.homeManagerModules.git
+    inputs.self.homeManagerModules.neovim
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -61,5 +64,5 @@
   systemd.user.startServices = "sd-switch";
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.05";
+  home.stateVersion = "25.11";
 }
