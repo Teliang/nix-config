@@ -1,11 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 {
   
   # Set your time zone.
   time.timeZone = "Asia/Tokyo";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "de_DE.UTF-8";
 
   # Select internationalisation properties.
   i18n = {
@@ -42,7 +39,7 @@
 
 
   # Configure console keymap
-  console.keyMap = "jp";
+  console.keyMap = "jp106";
 
   # Configure X11 keyboard layout (used by SDDM and Wayland)
   services.xserver.xkb = {

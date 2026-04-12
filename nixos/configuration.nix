@@ -13,6 +13,7 @@
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.core-packages
     inputs.self.nixosModules.gnome
+    inputs.self.nixosModules.locale
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd

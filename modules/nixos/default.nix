@@ -5,4 +5,5 @@
   # my-module = import ./my-module.nix;
   core-packages = import ./core-packages.nix;
   gnome = import ./gnome.nix;
+  locale = import ./locale.nix;
 }
