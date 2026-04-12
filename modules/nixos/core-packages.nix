@@ -16,7 +16,7 @@
   joplin-desktop
   vscode
   google-chrome
-  dbeaver-bin
+#  dbeaver-bin
   anki-bin
   android-studio
   mpv
