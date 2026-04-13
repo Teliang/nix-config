@@ -10,6 +10,8 @@
     dina-font
     proggyfonts
     home-manager
+    iperf
+    android-tools
 
     firefox
     joplin-desktop
@@ -29,7 +31,6 @@
     vlc
     arduino
     alacritty
-    dconf-editor
 
     jdk
     nodejs
@@ -64,9 +65,15 @@
     btop
     tree
     yadm
-    tmux
   ];
   programs.java.enable = true;
+
+  programs.tmux = {
+    enable = true;
+    clock24 = true;
+    extraConfig = '' # used for less common options, intelligently combines if defined in multiple places.
+    '';
+  };
 
   virtualisation.docker = {
     enable = true;
