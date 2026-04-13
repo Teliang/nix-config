@@ -1,0 +1,59 @@
+{
+    "comment": "clang-format -style=llvm --dump-config > .clang-format",
+    "languageserver": {
+        "cmake": {
+            "command": "cmake-language-server",
+            "filetypes": ["cmake"],
+            "rootPatterns": [
+                "build/"
+            ],
+            "initializationOptions": {
+                "buildDirectory": "build"
+            }
+        },
+      "clangd": {
+            "comment":"生成 compile_commands.json",
+            "comment1":" cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. ",
+            "comment2":" bear -- make ",
+            "command": "clangd",
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+        },
+      "rust": {
+        "command": "rust-analyzer",
+        "filetypes": ["rust"],
+        "rootPatterns": ["Cargo.toml"]
+      },
+        "golang": {
+            "comment":"go install golang.org/x/tools/gopls@latest",
+            "command": "gopls",
+            "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["go"],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"]
+        },
+        "kotlin": {
+            "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
+            "filetypes": ["kotlin"]
+        }
+        ,  "efm": {
+            "command": "efm-langserver",
+            "args": [],
+            // custom config path
+            // "args": ["-c", "/path/to/your/config.yaml"],
+            "filetypes": ["vim", "eruby", "markdown", "yaml"]
+        }
+    },
+    "coc.preferences.formatOnSaveFiletypes": [
+    "cpp","c","html","java","js"
+  ],
+  "coc.preferences.formatOnType": true,
+  "snippets.ultisnips.pythonPrompt": false,
+  "java.jdt.ls.java.home": "/usr/lib/jvm/default"
+}

@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  environment.variables.EDITOR = "nvim";
   environment.systemPackages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
@@ -36,6 +37,7 @@
     nodejs
     go
     rustc
+    rust-analyzer
     cargo
     php
     python315
@@ -47,6 +49,10 @@
     strace
     gsl
     boost
+    bash-language-server
+    clang
+    cmake-language-server
+    efm-langserver
 
     maven
     gradle
@@ -74,6 +80,21 @@
     extraConfig = '' # used for less common options, intelligently combines if defined in multiple places.
     '';
   };
+
+programs.bash = {
+  enable = true;
+
+  shellAliases = {
+    ll = "ls -alh";
+  };
+
+  interactiveShellInit = ''
+    # auto-start tmux
+    if [ -z "$TMUX" ]; then
+      tmux attach -t main || tmux new -s main
+    fi
+  '';
+};
 
   virtualisation.docker = {
     enable = true;
