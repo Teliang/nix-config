@@ -9,6 +9,7 @@
     mplus-outline-fonts.githubRelease
     dina-font
     proggyfonts
+    home-manager
 
     firefox
     joplin-desktop
@@ -64,10 +65,6 @@
     tree
     yadm
     tmux
-
-    gnomeExtensions.gsconnect
-    gnomeExtensions.appindicator
-    gnomeExtensions.bing-wallpaper
   ];
   programs.java.enable = true;
 

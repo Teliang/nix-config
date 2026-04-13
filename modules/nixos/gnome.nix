@@ -5,4 +5,12 @@
   # Enable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+  environment.systemPackages = with pkgs; [
+    gnomeExtensions.gsconnect
+    gnomeExtensions.appindicator
+    gnomeExtensions.bing-wallpaper
+    gnomeExtensions.pano
+    gnomeExtensions.dash-to-panel
+    gnome-tweaks
+  ];
 }
