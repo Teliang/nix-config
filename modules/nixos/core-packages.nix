@@ -53,6 +53,7 @@
     clang
     cmake-language-server
     efm-langserver
+    ncurses
 
     maven
     gradle

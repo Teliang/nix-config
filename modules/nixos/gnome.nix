@@ -9,9 +9,11 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsconnect
     gnomeExtensions.appindicator
-    gnomeExtensions.bing-wallpaper
+    # gnomeExtensions.bing-wallpaper
     gnomeExtensions.pano
     gnomeExtensions.dash-to-panel
+    gnomeExtensions.immich-wallpaper
+    gnomeExtensions.resource-monitor
     gnome-tweaks
     dconf-editor
   ];
