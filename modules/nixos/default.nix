@@ -6,4 +6,5 @@
   core-packages = import ./core-packages.nix;
   gnome = import ./gnome.nix;
   locale = import ./locale.nix;
+  niri = import ./niri.nix;
 }

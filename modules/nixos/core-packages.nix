@@ -30,7 +30,7 @@
     qbittorrent
     libreoffice
     vlc
-    arduino
+    arduino-ide
     alacritty
 
     jdk
@@ -74,6 +74,8 @@
     yadm
   ];
   programs.java.enable = true;
+
+  networking.networkmanager.enable = true;
 
   programs.tmux = {
     enable = true;
