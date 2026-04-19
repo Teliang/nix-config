@@ -13,6 +13,7 @@
     home-manager
     iperf
     android-tools
+    web-ext
 
     firefox
     joplin-desktop
