@@ -12,12 +12,15 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    nixos-hardware,
     ...
   } @ inputs: let
     # Supported systems for your flake packages, shell, etc.

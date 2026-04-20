@@ -15,10 +15,13 @@
     # inputs.self.nixosModules.niri
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
-
+ 
     # Or modules from other flakes (such as nixos-hardware):
-    # inputs.hardware.nixosModules.common-cpu-amd
-    # inputs.hardware.nixosModules.common-ssd
+    inputs.nixos-hardware.nixosModules.common-cpu-amd
+    inputs.nixos-hardware.nixosModules.common-cpu-amd-pstate
+    inputs.nixos-hardware.nixosModules.common-cpu-amd-zenpower
+    inputs.nixos-hardware.nixosModules.common-pc-ssd
+    inputs.nixos-hardware.nixosModules.common-pc-laptop
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
@@ -103,6 +106,28 @@
       # Opinionated: use keys only.
       # Remove if you want to SSH using passwords
       # PasswordAuthentication = false;
+    };
+  };
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        # Shows battery charge of connected devices on supported
+        # Bluetooth adapters. Defaults to 'false'.
+        Experimental = true;
+        # When enabled other devices can connect faster to us, however
+        # the tradeoff is increased power consumption. Defaults to
+        # 'false'.
+        # FastConnectable = true;
+      };
+      Policy = {
+        # Enable all controllers when they are found. This includes
+        # adapters present on start as well as adapters that are plugged
+        # in later on. Defaults to 'true'.
+        AutoEnable = true;
+      };
     };
   };
 
