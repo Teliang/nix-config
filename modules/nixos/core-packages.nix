@@ -33,6 +33,7 @@
     vlc
     arduino-ide
     alacritty
+    wechat-uos
 
     jdk
     nodejs
