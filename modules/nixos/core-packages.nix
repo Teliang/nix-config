@@ -14,6 +14,10 @@
     iperf
     android-tools
     web-ext
+    dnsutils
+    mailutils
+    # evolution
+    exiftool
 
     firefox
     joplin-desktop
@@ -76,6 +80,9 @@
     yadm
   ];
   programs.java.enable = true;
+  # mail
+  programs.thunderbird.enable = true;
+  programs.msmtp.enable = true;
 
   networking.networkmanager.enable = true;
 
