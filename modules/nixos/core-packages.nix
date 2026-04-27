@@ -1,5 +1,9 @@
 {pkgs, ...}: {
   environment.variables.EDITOR = "nvim";
+
+  # slack
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   environment.systemPackages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
@@ -19,6 +23,7 @@
     # evolution
     exiftool
     nixfmt
+    slack
 
     firefox
     joplin-desktop
@@ -40,6 +45,8 @@
     alacritty
     wechat-uos
 
+    gcc
+    cmake
     nodejs
     go
     rustc
@@ -88,7 +95,10 @@
   programs.thunderbird.enable = true;
   programs.msmtp.enable = true;
 
+
+
   networking.networkmanager.enable = true;
+  services.resolved.enable = true;
 
   programs.tmux = {
     enable = true;
