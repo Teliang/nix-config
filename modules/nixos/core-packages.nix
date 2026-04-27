@@ -39,7 +39,6 @@
     alacritty
     wechat-uos
 
-    jdk
     nodejs
     go
     rustc
@@ -79,7 +78,8 @@
     tree
     yadm
   ];
-  programs.java.enable = true;
+  programs.java = { enable = true; package = pkgs.jdk25; };
+  programs.nix-ld.enable = true;
   # mail
   programs.thunderbird.enable = true;
   programs.msmtp.enable = true;
