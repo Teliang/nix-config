@@ -15,7 +15,7 @@
     # inputs.self.nixosModules.niri
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
- 
+
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-amd
     inputs.nixos-hardware.nixosModules.common-cpu-amd-pstate
@@ -31,14 +31,14 @@
   ];
 
   # Bootloader.
- boot.loader.systemd-boot.enable = true;
- boot.loader.efi.canTouchEfiVariables = true;
- boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.useOSProber = true;
 
- time.hardwareClockInLocalTime = true;
-#  boot.loader.grub.enable = true;
-#  boot.loader.grub.device = "nodev";
-#  boot.loader.grub.useOSProber = true;
+  time.hardwareClockInLocalTime = true;
+  #  boot.loader.grub.enable = true;
+  #  boot.loader.grub.device = "nodev";
+  #  boot.loader.grub.useOSProber = true;
 
   nixpkgs = {
     # You can add overlays here
@@ -93,7 +93,7 @@
       openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
-      extraGroups = ["dialout" "networkmanager" "wheel" "docker" ];
+      extraGroups = ["dialout" "networkmanager" "wheel" "docker"];
     };
   };
 

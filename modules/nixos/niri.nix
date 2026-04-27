@@ -1,4 +1,5 @@
-{ config,
+{
+  config,
   pkgs,
   inputs,
   ...
@@ -13,11 +14,11 @@
       };
     };
   };
-  
+
   security.polkit.enable = true; # polkit
   services.gnome.gnome-keyring.enable = true; # secret service
   security.pam.services.swaylock = {};
-  
+
   programs.waybar.enable = true; # top bar
-  environment.systemPackages = with pkgs; [ alacritty fuzzel swaylock mako swayidle ];
+  environment.systemPackages = with pkgs; [alacritty fuzzel swaylock mako swayidle];
 }

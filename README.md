@@ -22,7 +22,7 @@ nix-shell -p git
 
 sudo nix-collect-garbage -d
 
-nix fmt
+nix fmt .
 ```
 
 ## dirty config

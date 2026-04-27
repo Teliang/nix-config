@@ -18,6 +18,7 @@
     mailutils
     # evolution
     exiftool
+    nixfmt
 
     firefox
     joplin-desktop
@@ -78,7 +79,10 @@
     tree
     yadm
   ];
-  programs.java = { enable = true; package = pkgs.jdk25; };
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk25;
+  };
   programs.nix-ld.enable = true;
   # mail
   programs.thunderbird.enable = true;
@@ -89,24 +93,24 @@
   programs.tmux = {
     enable = true;
     clock24 = true;
-    extraConfig = '' # used for less common options, intelligently combines if defined in multiple places.
+    extraConfig = ''      # used for less common options, intelligently combines if defined in multiple places.
     '';
   };
 
-programs.bash = {
-  enable = true;
+  programs.bash = {
+    enable = true;
 
-  shellAliases = {
-    ll = "ls -alh";
+    shellAliases = {
+      ll = "ls -alh";
+    };
+
+    interactiveShellInit = ''
+      # auto-start tmux
+      if [ -z "$TMUX" ]; then
+        tmux attach -t main || tmux new -s main
+      fi
+    '';
   };
-
-  interactiveShellInit = ''
-    # auto-start tmux
-    if [ -z "$TMUX" ]; then
-      tmux attach -t main || tmux new -s main
-    fi
-  '';
-};
 
   virtualisation.docker = {
     enable = true;
