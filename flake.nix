@@ -55,11 +55,18 @@
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       # FIXME replace with your hostname
-      nixos = nixpkgs.lib.nixosSystem {
+     xiaoxin-pro-14-2022  = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
-          ./nixos/configuration.nix
+          ./nixos/host/xiaoxin-pro-14-2022/configuration.nix
+        ];
+      };
+     thinkpad-t14s-gen3  = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          # > Our main nixos configuration file <
+          ./nixos/host/thinkpad-t14s-gen3/configuration.nix
         ];
       };
     };
@@ -68,7 +75,16 @@
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
       # FIXME replace with your username@hostname
-      "teliang@nixos" = home-manager.lib.homeManagerConfiguration {
+      "teliang@xiaoxin-pro-14-2022" = home-manager.lib.homeManagerConfiguration {
+        # Home-manager requires 'pkgs' instance
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+          # > Our main home-manager configuration file <
+          ./home-manager/home.nix
+        ];
+      };
+      "teliang@thinkpad-t14s-gen3" = home-manager.lib.homeManagerConfiguration {
         # Home-manager requires 'pkgs' instance
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
         extraSpecialArgs = {inherit inputs;};

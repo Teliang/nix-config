@@ -24,6 +24,8 @@
     exiftool
     nixfmt
     slack
+    fastfetch
+    netcat
 
     firefox
     joplin-desktop
@@ -46,7 +48,11 @@
     wechat-uos
 
     gcc
+    gnumake
     cmake
+    openssl
+    pkg-config
+    zlib
     nodejs
     go
     rustc
@@ -94,8 +100,6 @@
   # mail
   programs.thunderbird.enable = true;
   programs.msmtp.enable = true;
-
-
 
   networking.networkmanager.enable = true;
   services.resolved.enable = true;

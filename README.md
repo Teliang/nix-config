@@ -1,17 +1,15 @@
 # nix-config
 
-https://github.com/ec0m3x/nix-configs
-
 https://github.com/Misterio77/nix-starter-configs
 
 ```
 export NIX_CONFIG="experimental-features = nix-command flakes"
 
-sudo nixos-rebuild switch --flake .#nixos
+sudo nixos-rebuild switch --flake .#xiaoxin-pro-14-2022
 
 nix shell nixpkgs#home-manager
 
-home-manager switch --flake .#teliang@nixos
+home-manager switch --flake .#teliang@xiaoxin-pro-14-2022
 
 nix flake update
 ```
