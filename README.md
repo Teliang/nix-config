@@ -2,19 +2,18 @@
 
 https://github.com/Misterio77/nix-starter-configs
 
+## update
 ```
-export NIX_CONFIG="experimental-features = nix-command flakes"
+nix flake update
 
 sudo nixos-rebuild switch --flake .#xiaoxin-pro-14-2022
-
-nix shell nixpkgs#home-manager
+sudo nixos-rebuild switch --flake .#thinkpad-t14s-gen3
 
 home-manager switch --flake .#teliang@xiaoxin-pro-14-2022
-
-nix flake update
+home-manager switch --flake .#teliang@thinkpad-t14s-gen3
 ```
 
-
+## useful command
 ```
 nix-shell -p git
 
@@ -32,4 +31,9 @@ patch:
 
   schema_list:
     - schema: rime_ice
+```
+
+## ssh
+```
+chmod 600 ~/.ssh/id_rsa
 ```
