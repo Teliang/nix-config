@@ -105,6 +105,8 @@
   networking.networkmanager.enable = true;
   services.resolved.enable = true;
 
+  security.sudo.wheelNeedsPassword = false;
+
   programs.tmux = {
     enable = true;
     clock24 = true;
