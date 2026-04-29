@@ -1,0 +1,20 @@
+[user]
+	name = teliang
+	email = telianghung@outlook.com
+[credential]
+	helper = store
+[core]
+	editor = nvim
+	autocrlf = input
+#	pager = less -x1,5
+[merge]
+	tool = meld
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[color]
+	ui = auto

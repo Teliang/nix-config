@@ -11,9 +11,7 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
     # inputs.self.homeManagerModules.example
-    inputs.self.homeManagerModules.mpv
-    inputs.self.homeManagerModules.git
-    inputs.self.homeManagerModules.neovim
+    # inputs.self.homeManagerModules.neovim
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
@@ -52,6 +50,14 @@
     homeDirectory = "/home/teliang";
   };
 
+  home.file.".config/" = {
+  source = ./dotfiles/.config;
+  recursive = true;
+};
+  home.file.".local/" = {
+  source = ./dotfiles/.local;
+  recursive = true;
+};
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
