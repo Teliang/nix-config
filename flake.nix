@@ -59,14 +59,14 @@
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
-          ./nixos/host/xiaoxin-pro-14-2022/configuration.nix
+          ./nixos/xiaoxin-pro-14-2022/configuration.nix
         ];
       };
      thinkpad-t14s-gen3  = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
-          ./nixos/host/thinkpad-t14s-gen3/configuration.nix
+          ./nixos/thinkpad-t14s-gen3/configuration.nix
         ];
       };
     };

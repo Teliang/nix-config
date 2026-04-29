@@ -26,6 +26,7 @@
     slack
     fastfetch
     netcat
+    chntpw
 
     firefox
     joplin-desktop

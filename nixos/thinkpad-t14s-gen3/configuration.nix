@@ -82,7 +82,7 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
-  networking.hostName = "nixos";
+  networking.hostName = "thinkpad-t14s-gen3";
 
   users.users = {
     teliang = {

@@ -84,7 +84,7 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
-  networking.hostName = "nixos";
+  networking.hostName = "xiaoxin-pro-14-2022";
 
   users.users = {
     teliang = {
