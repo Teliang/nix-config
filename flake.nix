@@ -55,14 +55,14 @@
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       # FIXME replace with your hostname
-     xiaoxin-pro-14-2022  = nixpkgs.lib.nixosSystem {
+      xiaoxin-pro-14-2022 = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
           ./nixos/xiaoxin-pro-14-2022/configuration.nix
         ];
       };
-     thinkpad-t14s-gen3  = nixpkgs.lib.nixosSystem {
+      thinkpad-t14s-gen3 = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
