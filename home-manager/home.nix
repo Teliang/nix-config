@@ -51,13 +51,16 @@
   };
 
   home.file.".config/" = {
-  source = ./dotfiles/.config;
-  recursive = true;
-};
+    source = ./dotfiles/.config;
+    recursive = true;
+  };
+
+  home.file.".tmux.conf".source = ./dotfiles/.tmux.conf;
+
   home.file.".local/" = {
-  source = ./dotfiles/.local;
-  recursive = true;
-};
+    source = ./dotfiles/.local;
+    recursive = true;
+  };
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];

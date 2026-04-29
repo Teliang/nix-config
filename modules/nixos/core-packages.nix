@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.variables.EDITOR = "nvim";
 
   # slack
@@ -48,6 +49,7 @@
     alacritty
     wechat-uos
 
+    nixd
     gcc
     gnumake
     cmake
@@ -80,7 +82,6 @@
 
     scrcpy
     freerdp
-    neovim
     git
     qemu
     quickemu
@@ -107,13 +108,19 @@
 
   security.sudo.wheelNeedsPassword = false;
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+  };
+
   programs.tmux = {
     enable = true;
     clock24 = true;
-    extraConfig = ''      # used for less common options, intelligently combines if defined in multiple places.
-    '';
   };
 
+  # TODO move to dotfiles
   programs.bash = {
     enable = true;
 
