@@ -7,4 +7,5 @@
   gnome = import ./gnome.nix;
   locale = import ./locale.nix;
   niri = import ./niri.nix;
+  nix-ld = import ./nix-ld.nix;
 }

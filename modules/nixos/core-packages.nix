@@ -29,6 +29,10 @@
     netcat
     chntpw
 
+    libffi
+    pkg-config
+    python3Packages.pip
+
     firefox
     joplin-desktop
     vscode
