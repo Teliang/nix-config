@@ -27,11 +27,20 @@
     slack
     fastfetch
     netcat
+    inetutils
+    lsof
+    ldns
+
+    nfs-utils
+    linuxKernel.kernels.linux_zen
+    unixbench
+
     chntpw
+    woeusb
 
     libffi
     pkg-config
-    python3Packages.pip
+    python313Packages.autopep8
 
     firefox
     joplin-desktop
@@ -95,6 +104,7 @@
     nload
     htop
     btop
+    iotop
     tree
     yadm
   ];
