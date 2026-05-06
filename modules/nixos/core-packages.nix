@@ -42,7 +42,9 @@
     pkg-config
     python313Packages.autopep8
 
+    wpsoffice
     firefox
+    tor-browser
     joplin-desktop
     vscode
     google-chrome
@@ -50,6 +52,7 @@
     anki-bin
     android-studio
     mpv
+    eza
     calibre
     discord
     gimp
@@ -64,9 +67,10 @@
 
     nixd
     gcc
+    bear
+    clang-tools
     gnumake
     cmake
-    openssl
     pkg-config
     zlib
     nodejs
