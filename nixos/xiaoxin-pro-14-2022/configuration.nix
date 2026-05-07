@@ -17,6 +17,7 @@
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.nix-ld
+    inputs.self.nixosModules.lanmai
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-amd
