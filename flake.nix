@@ -72,6 +72,13 @@
             ./nixos/thinkpad-t14s-gen3/configuration.nix
           ];
         };
+        qemu = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            # > Our main nixos configuration file <
+            ./nixos/qemu/configuration.nix
+          ];
+        };
       };
 
       # Standalone home-manager configuration entrypoint
