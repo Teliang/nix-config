@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   environment.variables.EDITOR = "nvim";
 
   # slack
@@ -136,22 +135,6 @@
   programs.tmux = {
     enable = true;
     clock24 = true;
-  };
-
-  # TODO move to dotfiles
-  programs.bash = {
-    enable = true;
-
-    shellAliases = {
-      ll = "ls -alh";
-    };
-
-    interactiveShellInit = ''
-      # auto-start tmux
-      if [ -z "$TMUX" ]; then
-        tmux attach -t main || tmux new -s main
-      fi
-    '';
   };
 
   virtualisation.docker = {

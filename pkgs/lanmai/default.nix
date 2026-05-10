@@ -1,8 +1,7 @@
 {
-  pkgs ? import <nixpkgs> { },
+  pkgs ? import <nixpkgs> {},
   fetchFromGitHub,
 }:
-
 pkgs.stdenv.mkDerivation {
   pname = "lanmai";
   version = "1.0.0";
