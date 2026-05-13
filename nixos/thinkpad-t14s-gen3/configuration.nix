@@ -13,7 +13,7 @@
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.core-packages
     # inputs.self.nixosModules.niri
-    inputs.self.nixosModules.gnome
+    inputs.self.nixosModules.kde
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.nix-ld
 

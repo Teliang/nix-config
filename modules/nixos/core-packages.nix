@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   environment.variables.EDITOR = "nvim";
 
   # slack

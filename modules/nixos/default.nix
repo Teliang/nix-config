@@ -5,6 +5,7 @@
   # my-module = import ./my-module.nix;
   core-packages = import ./core-packages.nix;
   gnome = import ./gnome.nix;
+  kde = import ./kde.nix;
   locale = import ./locale.nix;
   niri = import ./niri.nix;
   nix-ld = import ./nix-ld.nix;
