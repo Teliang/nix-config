@@ -2,6 +2,12 @@
 
 https://github.com/Misterio77/nix-starter-configs
 
+## git submodule
+```
+git clone --recurse-submodules
+git submodule update --remote --merge --recursive
+```
+
 ## update
 ```
 nix flake update
@@ -24,5 +30,8 @@ nix fmt .
 
 ## ssh
 ```
+chmod 700 ~/.ssh
 chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/authorized_keys
 ```
