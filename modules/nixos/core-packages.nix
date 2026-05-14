@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.variables.EDITOR = "nvim";
 
   # slack
@@ -30,6 +31,9 @@
     lsof
     ldns
     parted
+    mosh
+    mitmproxy
+    yt-dlp
 
     nfs-utils
     linuxKernel.kernels.linux_zen
