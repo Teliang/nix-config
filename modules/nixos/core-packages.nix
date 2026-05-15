@@ -34,6 +34,8 @@
     mosh
     mitmproxy
     yt-dlp
+    automake
+    autoconf
 
     nfs-utils
     linuxKernel.kernels.linux_zen
