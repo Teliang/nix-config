@@ -4,6 +4,7 @@
 
   # slack
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  networking.firewall.enable = false;
 
   environment.systemPackages = with pkgs; [
     noto-fonts
