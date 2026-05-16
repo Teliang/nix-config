@@ -15,7 +15,7 @@ nix flake update
 sudo nixos-rebuild switch --flake .#xiaoxin-pro-14-2022
 sudo nixos-rebuild switch --flake .#thinkpad-t14s-gen3
 
-home-manager switch --flake .#teliang@xiaoxin-pro-14-2022
+home-manager switch --flake .?submodules=1#teliang@xiaoxin-pro-14-2022
 home-manager switch --flake .?submodules=1#teliang@thinkpad-t14s-gen3
 ```
 

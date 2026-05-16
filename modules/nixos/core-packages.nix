@@ -58,6 +58,7 @@
     anki-bin
     android-studio
     mpv
+    mpvScripts.autosub
     eza
     calibre
     discord
