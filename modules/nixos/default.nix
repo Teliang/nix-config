@@ -6,6 +6,10 @@
   core-packages = import ./core-packages.nix;
   gnome = import ./gnome.nix;
   kde = import ./kde.nix;
+  cosmic = import ./cosmic.nix;
+  cinnamon = import ./cinnamon.nix;
+  xfce = import ./xfce.nix;
+
   locale = import ./locale.nix;
   niri = import ./niri.nix;
   nix-ld = import ./nix-ld.nix;
