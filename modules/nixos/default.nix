@@ -14,4 +14,5 @@
   niri = import ./niri.nix;
   nix-ld = import ./nix-ld.nix;
   lanmai = import ./lanmai.nix;
+  samba = import ./samba.nix;
 }
