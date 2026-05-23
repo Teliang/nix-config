@@ -10,6 +10,7 @@
   cinnamon = import ./cinnamon.nix;
   xfce = import ./xfce.nix;
 
+  wireguard = import ./wireguard.nix;
   locale = import ./locale.nix;
   niri = import ./niri.nix;
   nix-ld = import ./nix-ld.nix;

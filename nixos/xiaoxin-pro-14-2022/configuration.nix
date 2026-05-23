@@ -19,6 +19,7 @@
     inputs.self.nixosModules.nix-ld
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
+    # inputs.self.nixosModules.wireguard
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-amd
