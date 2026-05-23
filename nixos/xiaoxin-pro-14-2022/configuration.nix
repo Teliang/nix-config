@@ -19,7 +19,6 @@
     inputs.self.nixosModules.nix-ld
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
-    # inputs.self.nixosModules.wireguard
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-amd
@@ -92,6 +91,10 @@
     };
 
   networking.hostName = "xiaoxin-pro-14-2022";
+  services.resolved = {
+    enable = true;
+    dnsovertls = "opportunistic";
+  };
 
   users.users = {
     teliang = {

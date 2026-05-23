@@ -8,7 +8,7 @@
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = [ pkgs.cifs-utils ];
   fileSystems."/home/teliang/samba" = {
-    device = "//server/data";
+    device = "//192.168.2.2/data";
     fsType = "cifs";
     options =
       let
