@@ -47,7 +47,7 @@
 
     libffi
     pkg-config
-    python313Packages.autopep8
+    # python313Packages.autopep8
 
     wpsoffice
     firefox
@@ -89,9 +89,6 @@
     php
     python315
     python314
-    python312
-    python311
-    python310
     ccls
     strace
     gsl
