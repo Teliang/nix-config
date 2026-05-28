@@ -16,6 +16,7 @@
     # inputs.self.nixosModules.niri
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
+    inputs.self.nixosModules.input-method
     inputs.self.nixosModules.nix-ld
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba

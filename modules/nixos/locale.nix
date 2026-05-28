@@ -22,30 +22,9 @@
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
-    inputMethod = {
-      enable = true;
-      type = "fcitx5";
-      fcitx5.addons = with pkgs; [
-        fcitx5-mozc-ut
-        fcitx5-gtk
-        librime
-        # TODO
-        rime-zhwiki
-        (fcitx5-rime.override {
-          rimeDataPkgs = [
-            rime-ice
-          ];
-        })
-      ];
-    };
   };
 
   # Configure console keymap
   console.keyMap = "jp106";
 
-  # Configure X11 keyboard layout (used by SDDM and Wayland)
-  services.xserver.xkb = {
-    layout = "jp";
-    variant = "OADG109A";
-  };
 }

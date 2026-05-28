@@ -13,6 +13,7 @@
     # If you want to use modules your own flake exports (from modules/nixos):
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.locale
+    inputs.self.nixosModules.server-packager
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-intel
@@ -35,6 +36,16 @@
   #  boot.loader.grub.enable = true;
   #  boot.loader.grub.device = "nodev";
   #  boot.loader.grub.useOSProber = true;
+
+  boot.kernelModules = [ "tcp_bbr" ]; # FIX: Network Congestion Control (Helps with packet jitter)
+  boot.kernel.sysctl = {
+    "net.ipv4.tcp_congestion_control" = "bbr";
+    "net.core.default_qdisc" = "fq";
+    "net.core.wmem_max" = 1073741824;
+    "net.core.rmem_max" = 1073741824;
+    "net.ipv4.tcp_rmem" = "4096 87380 1073741824";
+    "net.ipv4.tcp_wmem" = "4096 87380 1073741824";
+  };
 
   nixpkgs = {
     # You can add overlays here

@@ -5,6 +5,8 @@ https://github.com/Misterio77/nix-starter-configs
 ## git submodule
 ```
 git clone --recurse-submodules
+
+git submodule update --init --recursive
 git submodule update --remote --merge --recursive
 ```
 
