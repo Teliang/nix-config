@@ -12,16 +12,12 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
     # inputs.self.nixosModules.example
-    inputs.self.nixosModules.core-packages
-    # inputs.self.nixosModules.niri
-    inputs.self.nixosModules.kde
     inputs.self.nixosModules.locale
-    inputs.self.nixosModules.nix-ld
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-intel
     inputs.nixos-hardware.nixosModules.common-pc-ssd
-    inputs.nixos-hardware.nixosModules.common-pc-laptop
+    # inputs.nixos-hardware.nixosModules.common-pc-laptop
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
@@ -91,7 +87,7 @@
       nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
     };
 
-  networking.hostName = "thinkpad-t14s-gen3";
+  networking.hostName = "n4100";
 
   users.users = {
     teliang = {

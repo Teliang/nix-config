@@ -66,11 +66,11 @@
             ./nixos/xiaoxin-pro-14-2022/configuration.nix
           ];
         };
-        thinkpad-t14s-gen3 = nixpkgs.lib.nixosSystem {
+        n4100 = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             # > Our main nixos configuration file <
-            ./nixos/thinkpad-t14s-gen3/configuration.nix
+            ./nixos/n4100/configuration.nix
           ];
         };
         qemu = nixpkgs.lib.nixosSystem {
@@ -95,7 +95,7 @@
             ./home-manager/home.nix
           ];
         };
-        "teliang@thinkpad-t14s-gen3" = home-manager.lib.homeManagerConfiguration {
+        "teliang@n4100" = home-manager.lib.homeManagerConfiguration {
           # Home-manager requires 'pkgs' instance
           pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
           extraSpecialArgs = { inherit inputs; };
