@@ -19,4 +19,5 @@
   samba = import ./samba.nix;
 
   server-packager = import ./server-packager.nix;
+  k3s = import ./k3s.nix;
 }

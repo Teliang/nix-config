@@ -14,6 +14,7 @@
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.server-packager
+    inputs.self.nixosModules.k3s
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-intel
