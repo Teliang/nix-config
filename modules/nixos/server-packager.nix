@@ -27,6 +27,7 @@
     iotop
     tree
     yadm
+    smartmontools
   ];
 
   networking.networkmanager.enable = true;

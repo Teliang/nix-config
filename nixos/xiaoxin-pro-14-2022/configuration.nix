@@ -17,7 +17,7 @@
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.input-method
-    inputs.self.nixosModules.nix-ld
+    # inputs.self.nixosModules.nix-ld
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
 
@@ -103,7 +103,7 @@
       gc = {
         automatic = true;
         dates = "daily";
-        options = "--delete-older-than 14d";
+        options = "--delete-older-than 2d";
       };
     };
 

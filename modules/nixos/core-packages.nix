@@ -7,6 +7,8 @@
   networking.firewall.enable = false;
 
   environment.systemPackages = with pkgs; [
+    smartmontools
+
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -28,7 +30,9 @@
     slack
     fastfetch
     netcat
+    tcpdump
     inetutils
+    nmap
     lsof
     ldns
     parted
