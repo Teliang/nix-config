@@ -148,6 +148,6 @@
   };
 
   virtualisation.docker = {
-    enable = true;
+    # enable = true;
   };
 }
