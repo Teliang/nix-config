@@ -10,6 +10,7 @@
   cinnamon = import ./cinnamon.nix;
   xfce = import ./xfce.nix;
 
+  firefox = import ./firefox.nix;
   wireguard = import ./wireguard.nix;
   locale = import ./locale.nix;
   input-method = import ./input-method.nix;

@@ -17,7 +17,7 @@
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.input-method
-    # inputs.self.nixosModules.nix-ld
+    inputs.self.nixosModules.firefox
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
 
@@ -99,19 +99,9 @@
       # Opinionated: make flake registry and nix path match flake inputs
       registry = lib.mapAttrs (_: flake: { inherit flake; }) flakeInputs;
       nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
-
-      gc = {
-        automatic = true;
-        dates = "daily";
-        options = "--delete-older-than 2d";
-      };
     };
 
   networking.hostName = "xiaoxin-pro-14-2022";
-  services.resolved = {
-    enable = true;
-    settings.Resolve.DNSOverTLS = "opportunistic";
-  };
 
   users.users = {
     teliang = {

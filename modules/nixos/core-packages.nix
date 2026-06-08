@@ -2,12 +2,9 @@
 {
   environment.variables.EDITOR = "nvim";
 
-  # slack
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   networking.firewall.enable = false;
 
   environment.systemPackages = with pkgs; [
-    smartmontools
 
     noto-fonts
     noto-fonts-cjk-sans
@@ -19,43 +16,9 @@
     dina-font
     proggyfonts
     home-manager
-    iperf
-    android-tools
-    web-ext
-    dnsutils
-    mailutils
-    # evolution
-    exiftool
     nixfmt
-    slack
-    fastfetch
-    netcat
-    tcpdump
-    inetutils
-    nmap
-    lsof
-    ldns
-    parted
-    mosh
-    mitmproxy
-    yt-dlp
-    automake
-    autoconf
 
-    nfs-utils
-    linuxKernel.kernels.linux_zen
-    unixbench
-
-    chntpw
-    woeusb
-
-    libffi
-    pkg-config
-    # python313Packages.autopep8
-
-    wpsoffice
-    firefox
-    tor-browser
+    # graphical app
     joplin-desktop
     vscode
     google-chrome
@@ -64,7 +27,6 @@
     android-studio
     mpv
     mpvScripts.autosub
-    eza
     calibre
     discord
     gimp
@@ -74,9 +36,9 @@
     libreoffice
     vlc
     arduino-ide
-    alacritty
     wechat-uos
 
+    # developer tool
     nixd
     gcc
     bear
@@ -102,10 +64,48 @@
     cmake-language-server
     efm-langserver
     ncurses
+    libffi
+    android-tools
+    web-ext
+    automake
+    autoconf
 
     maven
     gradle
 
+    # monitor
+    nload
+    htop
+    btop
+    iotop
+    tree
+    yadm
+    smartmontools
+    iperf
+    dnsutils
+    mailutils
+    exiftool
+
+    fastfetch
+    netcat
+    tcpdump
+    inetutils
+    nmap
+    lsof
+    ldns
+    parted
+    mosh
+    mitmproxy
+
+    linuxKernel.kernels.linux_zen
+    unixbench
+
+    # terminal app
+
+    chntpw
+    woeusb
+
+    eza
     scrcpy
     freerdp
     git
@@ -113,13 +113,6 @@
     quickemu
     wget
     curl
-
-    nload
-    htop
-    btop
-    iotop
-    tree
-    yadm
   ];
   programs.java = {
     enable = true;
@@ -131,7 +124,11 @@
   programs.msmtp.enable = true;
 
   networking.networkmanager.enable = true;
-  services.resolved.enable = true;
+
+  services.resolved = {
+    enable = true;
+    settings.Resolve.DNSOverTLS = "opportunistic";
+  };
 
   security.sudo.wheelNeedsPassword = false;
 

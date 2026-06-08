@@ -57,7 +57,7 @@
   };
 
   home.file.".tmux.conf".source = ./dotfiles/.tmux.conf;
-  home.file.".bash_profile".source = ./dotfiles/.bash_profile;
+  home.file.".bashrc".source = ./dotfiles/.bash_profile;
 
   home.file.".local/" = {
     source = ./dotfiles/.local;

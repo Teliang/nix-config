@@ -73,13 +73,6 @@
             ./nixos/n4100/configuration.nix
           ];
         };
-        qemu = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            # > Our main nixos configuration file <
-            ./nixos/qemu/configuration.nix
-          ];
-        };
       };
 
       # Standalone home-manager configuration entrypoint
@@ -96,15 +89,6 @@
           ];
         };
         "teliang@n4100" = home-manager.lib.homeManagerConfiguration {
-          # Home-manager requires 'pkgs' instance
-          pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
-          extraSpecialArgs = { inherit inputs; };
-          modules = [
-            # > Our main home-manager configuration file <
-            ./home-manager/home.nix
-          ];
-        };
-        "teliang@qemu" = home-manager.lib.homeManagerConfiguration {
           # Home-manager requires 'pkgs' instance
           pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
           extraSpecialArgs = { inherit inputs; };

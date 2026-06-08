@@ -14,7 +14,7 @@
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.server-packager
-    inputs.self.nixosModules.k3s
+    # inputs.self.nixosModules.k3s
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-intel
@@ -85,11 +85,6 @@
         flake-registry = "";
         # Workaround for https://github.com/NixOS/nix/issues/9574
         nix-path = config.nix.nixPath;
-
-        # Download optimization
-        http-connections = 128;
-        max-substitution-jobs = 128;
-        max-jobs = "auto";
       };
       # Opinionated: disable channels
       channel.enable = false;
