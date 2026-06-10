@@ -12,7 +12,6 @@
     liberation_ttf
     fira-code
     fira-code-symbols
-    mplus-outline-fonts.githubRelease
     dina-font
     proggyfonts
     home-manager
@@ -21,7 +20,6 @@
     # graphical app
     joplin-desktop
     vscode
-    google-chrome
     dbeaver-bin
     anki-bin
     android-studio
@@ -97,7 +95,6 @@
     mosh
     mitmproxy
 
-    linuxKernel.kernels.linux_zen
     unixbench
 
     # terminal app
@@ -114,11 +111,14 @@
     wget
     curl
   ];
+
   programs.java = {
     enable = true;
     package = pkgs.jdk25;
   };
+
   programs.nix-ld.enable = true;
+
   # mail
   programs.thunderbird.enable = true;
   programs.msmtp.enable = true;
@@ -127,7 +127,7 @@
 
   services.resolved = {
     enable = true;
-    settings.Resolve.DNSOverTLS = "opportunistic";
+    settings.Resolve.DNSOverTLS = "opportunistic"; # for vpn
   };
 
   security.sudo.wheelNeedsPassword = false;

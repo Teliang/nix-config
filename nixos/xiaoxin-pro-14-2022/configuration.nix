@@ -18,6 +18,7 @@
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.input-method
     inputs.self.nixosModules.firefox
+    inputs.self.nixosModules.chromium
     inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
 

@@ -11,11 +11,11 @@
   xfce = import ./xfce.nix;
 
   firefox = import ./firefox.nix;
+  chromium = import ./chromium.nix;
   wireguard = import ./wireguard.nix;
   locale = import ./locale.nix;
   input-method = import ./input-method.nix;
   niri = import ./niri.nix;
-  nix-ld = import ./nix-ld.nix;
   lanmai = import ./lanmai.nix;
   samba = import ./samba.nix;
 
