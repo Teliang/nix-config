@@ -19,6 +19,8 @@
 
       "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx" # Bitwarden
 
+      "jplgfhpmjnbigmhklmmbgecoobifkmpa;https://clients2.google.com/service/update2/crx" # Proton VPN
+
     ];
 
   };
