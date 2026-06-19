@@ -99,6 +99,9 @@
 
     # terminal app
 
+    bento4
+    yt-dlp
+
     chntpw
     woeusb
 
