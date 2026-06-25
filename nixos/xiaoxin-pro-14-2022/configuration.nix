@@ -36,8 +36,6 @@
     ./hardware-configuration.nix
   ];
 
-  time.hardwareClockInLocalTime = true;
-
   networking.hostName = "xiaoxin-pro-14-2022";
 
 }
