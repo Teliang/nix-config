@@ -63,6 +63,20 @@
             ./nixos/xiaoxin-pro-14-2022/configuration.nix
           ];
         };
+        mac-mini-2018 = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./nixos/mac-mini-2018/configuration.nix
+            nixos-hardware.nixosModules.apple-t2
+          ];
+        };
+        macbook-air-2020 = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./nixos/macbook-air-2020/configuration.nix
+            nixos-hardware.nixosModules.apple-t2
+          ];
+        };
         n4100 = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
@@ -90,6 +104,8 @@
         };
         "teliang@n4100" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
         "teliang@qemu" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
+        "teliang@mac-mini-2018" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
+        "teliang@macbook-air-2020" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
       };
     };
 }

@@ -11,7 +11,9 @@
   xfce = import ./xfce.nix;
 
   firefox = import ./firefox.nix;
+  firefox-overrides = import ./firefox-overrides.nix;
   chromium = import ./chromium.nix;
+  chromium-overrides = import ./chromium-overrides.nix;
   wireguard = import ./wireguard.nix;
   locale = import ./locale.nix;
   input-method = import ./input-method.nix;

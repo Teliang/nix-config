@@ -10,12 +10,6 @@ git submodule update --init --recursive
 git submodule update --remote --merge --recursive
 ```
 
-## install
-```
-# use tsinghua mirror
-nixos-install --flake .#xiaoxin-pro-14-2022 --option substituters "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
-```
-
 ## update
 ```
 nix flake update
