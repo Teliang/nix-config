@@ -4,8 +4,6 @@ https://github.com/Misterio77/nix-starter-configs
 
 ## git submodule
 ```
-git clone --recurse-submodules
-
 git submodule update --init --recursive
 git submodule update --remote --merge --recursive
 ```
@@ -14,10 +12,8 @@ git submodule update --remote --merge --recursive
 ```
 nix flake update
 
-sudo nixos-rebuild switch --flake .#xiaoxin-pro-14-2022
 sudo nixos-rebuild switch --flake .#n4100
 
-home-manager switch --flake .?submodules=1#teliang@xiaoxin-pro-14-2022
 home-manager switch --flake .?submodules=1#teliang@n4100
 ```
 
