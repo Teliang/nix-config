@@ -11,9 +11,7 @@
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
-    # inputs.self.nixosModules.example
     inputs.self.nixosModules.core-packages
-    # inputs.self.nixosModules.niri
     inputs.self.nixosModules.gnome
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.input-method
@@ -21,7 +19,6 @@
     inputs.self.nixosModules.firefox-overrides
     inputs.self.nixosModules.chromium
     inputs.self.nixosModules.chromium-overrides
-    inputs.self.nixosModules.lanmai
     inputs.self.nixosModules.samba
 
     # Or modules from other flakes (such as nixos-hardware):
@@ -36,6 +33,8 @@
   ];
 
   networking.hostName = "mac-mini-2018";
+
+  programs.ccache.enable = true;
 
   hardware.firmware = [
     (pkgs.stdenvNoCC.mkDerivation (final: {
