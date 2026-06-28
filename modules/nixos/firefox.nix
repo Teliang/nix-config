@@ -1,44 +1,53 @@
-{config,pkgs, ...}: {
+{ config, pkgs, ... }: {
   programs.firefox = {
-  enable = true;
+    enable = true;
 
-  languagePacks = [ "en-US" "zh-CN" "ja" ];
+    languagePacks = [
+      "en-US"
+      "zh-CN"
+      "zh-TW"
+      "ja"
+    ];
 
-  policies = {
-    # Updates & Background Services
-    AppAutoUpdate                 = false;
-    BackgroundAppUpdate           = false;
+    preferences = {
+      "browser.translations.enable" = false;
+    };
 
-    # Feature Disabling
-    DisableFirefoxStudies         = true;
-    DisableFirefoxScreenshots     = true;
-    DisableForgetButton           = true;
-    DisableMasterPasswordCreation = true;
-    DisableProfileImport          = true;
-    DisableProfileRefresh         = true;
-    DisableSetDesktopBackground   = true;
-    DisablePocket                 = true;
-    DisableTelemetry              = true;
-    DisableFormHistory            = true;
-    DisablePasswordReveal         = true;
+    policies = {
+      # Updates & Background Services
+      AppAutoUpdate = false;
+      BackgroundAppUpdate = false;
 
-    # Access Restrictions
-    BlockAboutConfig              = false;
-    BlockAboutProfiles            = true;
-    BlockAboutSupport             = true;
+      # Feature Disabling
+      DisableFirefoxStudies = true;
+      DisableFirefoxScreenshots = true;
+      DisableForgetButton = true;
+      DisableMasterPasswordCreation = true;
+      DisableProfileImport = true;
+      DisableProfileRefresh = true;
+      DisableSetDesktopBackground = true;
+      DisablePocket = true;
+      DisableTelemetry = true;
+      DisableFormHistory = true;
+      DisablePasswordReveal = true;
 
-    # UI and Behavior
-    DisplayMenuBar                = "never";
-    DontCheckDefaultBrowser       = true;
-    HardwareAcceleration          = true;
-    OfferToSaveLogins             = false;
-    
-    SearchEngines = {
-      Default         = "DuckDuckGo";
-      PrivateDefault  = "DuckDuckGo";
+      # Access Restrictions
+      BlockAboutConfig = false;
+      BlockAboutProfiles = true;
+      BlockAboutSupport = true;
+
+      # UI and Behavior
+      DisplayMenuBar = "never";
+      DontCheckDefaultBrowser = true;
+      HardwareAcceleration = true;
+      OfferToSaveLogins = false;
+
+      SearchEngines = {
+        Default = "DuckDuckGo";
+        PrivateDefault = "DuckDuckGo";
+      };
+
     };
 
   };
-
-};
 }

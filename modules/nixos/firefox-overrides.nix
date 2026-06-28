@@ -1,8 +1,8 @@
-{config,pkgs, ...}: {
+{ config, pkgs, ... }: {
   programs.firefox = {
     policies = {
       Preferences = {
-	"media.av1.enabled" = false;
+        "media.av1.enabled" = false;
       };
     };
   };
