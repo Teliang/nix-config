@@ -3,5 +3,5 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
-  neovim = import ./neovim.nix;
+  gnome = import ./gnome.nix;
 }

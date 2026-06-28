@@ -99,11 +99,19 @@
           extraSpecialArgs = { inherit inputs; };
           modules = [
             # > Our main home-manager configuration file <
+            ./home-manager/home-gnome.nix
+          ];
+        };
+        "teliang@n4100" = home-manager.lib.homeManagerConfiguration {
+          # Home-manager requires 'pkgs' instance
+          pkgs = nixpkgs.legacyPackages.x86_64-linux; # FIXME replace x86_64-linux with your architecure
+          extraSpecialArgs = { inherit inputs; };
+          modules = [
+            # > Our main home-manager configuration file <
             ./home-manager/home.nix
           ];
         };
-        "teliang@n4100" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
-        "teliang@qemu" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
+        "teliang@qemu" = self.homeConfigurations."teliang@n4100";
         "teliang@mac-mini-2018" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
         "teliang@macbook-air-2020" = self.homeConfigurations."teliang@xiaoxin-pro-14-2022";
       };
