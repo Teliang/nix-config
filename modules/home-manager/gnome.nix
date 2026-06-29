@@ -27,5 +27,8 @@
     "org/gnome/shell" = {
       disable-user-extensions = false;
     };
+    "org/gnome/desktop/screensaver" = {
+      lock-enabled = false;
+    };
   };
 }
