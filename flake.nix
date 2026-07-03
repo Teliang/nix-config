@@ -67,14 +67,12 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./nixos/mac-mini-2018/configuration.nix
-            nixos-hardware.nixosModules.apple-t2
           ];
         };
         macbook-air-2020 = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             ./nixos/macbook-air-2020/configuration.nix
-            nixos-hardware.nixosModules.apple-t2
           ];
         };
         n4100 = nixpkgs.lib.nixosSystem {

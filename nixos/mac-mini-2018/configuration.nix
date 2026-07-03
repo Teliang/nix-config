@@ -23,6 +23,8 @@
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-pc-ssd
+    inputs.nixos-hardware.nixosModules.apple-t2
+    inputs.nixos-hardware.nixosModules.common-hidpi
 
     # You can also split up your configuration and import pieces of it here:
     ../common-configuration.nix
