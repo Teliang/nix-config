@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    chromium
+    # Enabling DRM (Widevine support)
+    (chromium.override { enableWideVine = true; })
   ];
 
   programs.chromium = {
@@ -21,7 +22,22 @@
 
       "jplgfhpmjnbigmhklmmbgecoobifkmpa;https://clients2.google.com/service/update2/crx" # Proton VPN
 
+      "ankepacjgoajhjpenegknbefpmfffdic;https://clients2.google.com/service/update2/crx" # Hide shorts for Youtube
     ];
 
+    # https://chromeenterprise.google/policies
+    extraOpts = {
+      "BrowserSignin" = 0;
+      "SyncDisabled" = true;
+      "PasswordManagerEnabled" = false;
+      "SpellcheckEnabled" = true;
+      "SpellcheckLanguage" = [
+        "en-US"
+        "zh-CN"
+        "zh-TW"
+        "ja"
+      ];
+      "TranslateEnabled" = false;
+    };
   };
 }

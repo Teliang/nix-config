@@ -19,6 +19,8 @@ home-manager switch --flake .?submodules=1#teliang@n4100
 
 ## useful command
 ```
+man configuration.nix
+
 nix-shell -p git
 
 sudo nix-collect-garbage -d
