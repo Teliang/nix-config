@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     # Enabling DRM (Widevine support)
+    # LGPL, BSD-3
     (chromium.override { enableWideVine = true; })
   ];
 

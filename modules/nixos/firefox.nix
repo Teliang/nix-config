@@ -1,4 +1,5 @@
 { config, pkgs, ... }: {
+  # MPL 2.0
   programs.firefox = {
     enable = true;
 

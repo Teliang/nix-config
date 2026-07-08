@@ -1,13 +1,14 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   i18n = {
     inputMethod = {
       enable = true;
+      # LGPL
       type = "fcitx5";
       fcitx5.addons = with pkgs; [
         fcitx5-mozc-ut
         fcitx5-gtk
+        # BSD-3-Clause license
         librime
-        # TODO
         rime-zhwiki
         (fcitx5-rime.override {
           rimeDataPkgs = [
