@@ -18,6 +18,7 @@
     nixfmt
 
     # graphical app
+    goldendict-ng
     joplin-desktop
     vscode
     dbeaver-bin
