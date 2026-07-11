@@ -33,8 +33,8 @@
     goldendict-ng
     # AGPL-3.0
     joplin-desktop
-    # Proprietary (Microsoft Software License; open-source core is MIT)
-    vscode
+    # MIT
+    vscodium
     # Apache-2.0 / Proprietary (Commercial extensions available, binary is free-to-use)
     dbeaver-bin
     # AGPL-3.0-or-later
@@ -132,6 +132,9 @@
     maven
     # Apache-2.0
     gradle
+
+    # GPL-2.0
+    aria2
 
     # --- System Monitors & Network Utilities ---
     # GPL-2.0-or-later
