@@ -66,6 +66,9 @@
     # Proprietary
     wechat-uos
 
+    # GPL-2.0 license
+    kdiff3
+
     # --- Developer Tools ---
     # LGPL-2.1-or-later
     nixd
