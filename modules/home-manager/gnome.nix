@@ -14,8 +14,8 @@
     };
     "org/gnome/desktop/break-reminders" = {
       selected-breaks = [
-        "eyesight"
-        "movement"
+        # "eyesight"
+        # "movement"
       ];
     };
     "org/gnome/desktop/interface" = {
@@ -32,6 +32,9 @@
     };
     "org/gnome/desktop/notifications" = {
       show-banners = false;
+    };
+    "org/gnome/desktop/interface" = {
+      show-battery-percentage = true;
     };
   };
 }
