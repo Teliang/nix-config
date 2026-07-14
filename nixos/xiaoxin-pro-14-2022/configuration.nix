@@ -36,6 +36,10 @@
     ./hardware-configuration.nix
   ];
 
+  boot.loader.systemd-boot.windows = {
+    "11-Home".efiDeviceHandle = "HD0d"; # find by `map -c` in UEFI shell
+  };
+
   networking.hostName = "xiaoxin-pro-14-2022";
 
 }
