@@ -186,6 +186,8 @@
 
     # GPL-2.0-or-later
     unixbench
+    # unfree
+    geekbench
 
     # --- Terminal Apps & CLI Utilities ---
     # GPL-2.0-or-later (Commercial licenses exist)
