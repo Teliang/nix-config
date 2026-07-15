@@ -39,5 +39,8 @@
     "org/gnome/system/location" = {
       enabled = false;
     };
+    "org/gnome/desktop/peripherals/touchpad" = {
+      speed = 0.4;
+    };
   };
 }
