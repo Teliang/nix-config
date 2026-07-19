@@ -65,9 +65,19 @@
     arduino-ide
     # Proprietary
     wechat-uos
+    # Proprietary
+    steam
+    # Proprietary
+    obsidian
+    # Proprietary
+    # TODO
+    # moneydance
 
     # GPL-2.0 license
     kdiff3
+
+    # GPL-3.0 license
+    flameshot
 
     # --- Developer Tools ---
     # LGPL-2.1-or-later
@@ -221,7 +231,7 @@
   # GPL-2.0-with-classpath-exception (OpenJDK)
   programs.java = {
     enable = true;
-    package = pkgs.jdk25;
+    package = pkgs.openjdk25;
   };
 
   # MIT (NixOS helper script)
