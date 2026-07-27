@@ -11,7 +11,6 @@
     gnomeExtensions.gsconnect
     gnomeExtensions.appindicator
     # gnomeExtensions.bing-wallpaper
-    gnomeExtensions.pano
     gnomeExtensions.dash-to-panel
     gnomeExtensions.immich-wallpaper
     gnomeExtensions.resource-monitor

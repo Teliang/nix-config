@@ -192,7 +192,7 @@
     # GPL-3.0-or-later
     mosh
     # MIT
-    mitmproxy
+    # mitmproxy
 
     # GPL-2.0-or-later
     unixbench
