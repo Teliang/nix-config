@@ -72,6 +72,8 @@
     # Proprietary
     # TODO
     # moneydance
+    # Mozilla Public License 2.0
+    brave
 
     # GPL-2.0 license
     kdiff3
