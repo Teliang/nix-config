@@ -14,6 +14,7 @@
     gnomeExtensions.dash-to-panel
     gnomeExtensions.immich-wallpaper
     gnomeExtensions.resource-monitor
+    gnomeExtensions.frequency-boost-switch
     gnome-tweaks
     dconf-editor
   ];
