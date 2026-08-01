@@ -24,6 +24,8 @@
       "jplgfhpmjnbigmhklmmbgecoobifkmpa;https://clients2.google.com/service/update2/crx" # Proton VPN
 
       "ankepacjgoajhjpenegknbefpmfffdic;https://clients2.google.com/service/update2/crx" # Hide shorts for Youtube
+
+      "pfnededegaaopdmhkdmcofjmoldfiped;https://clients2.google.com/service/update2/crx" # Proxy SwitchyOmega 3 (ZeroOmega)
     ];
 
     # https://chromeenterprise.google/policies
