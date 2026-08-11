@@ -7,6 +7,9 @@
   services.displayManager.gdm.autoSuspend = false;
   #	GPL-2.0-or-later
   services.desktopManager.gnome.enable = true;
+
+  services.gnome.localsearch.enable = false;
+
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsconnect
     gnomeExtensions.appindicator
