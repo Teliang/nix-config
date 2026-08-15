@@ -34,15 +34,33 @@
     # AGPL-3.0
     joplin-desktop
     # MIT
-    vscodium
-
     (vscode-with-extensions.override {
       vscode = vscodium;
       vscodeExtensions =
         with vscode-extensions;
         [
-          bbenoist.nix
+          # java
+          vscjava.vscode-java-pack
+          redhat.java
+          vscjava.vscode-maven
+          vscjava.vscode-gradle
+          vscjava.vscode-java-test
+          vscjava.vscode-java-debug
+          vscjava.vscode-java-dependency
+          vscjava.vscode-spring-initializr
+          # python
           ms-python.python
+          ms-python.debugpy
+          ms-python.pylint
+          ms-python.vscode-pylance
+
+          rust-lang.rust-analyzer
+
+          # frontend
+          ecmel.vscode-html-css
+          dbaeumer.vscode-eslint
+
+          bbenoist.nix
           ms-azuretools.vscode-docker
           ms-vscode-remote.remote-ssh
         ]
