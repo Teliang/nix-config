@@ -35,7 +35,7 @@
     joplin-desktop
     # MIT
     (vscode-with-extensions.override {
-      vscode = vscodium;
+      # vscode = vscodium;
       vscodeExtensions =
         with vscode-extensions;
         [
