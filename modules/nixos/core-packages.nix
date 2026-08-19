@@ -96,8 +96,8 @@
     remmina
     # GPL-2.0-or-later
     qbittorrent
-    # MPL-2.0
-    libreoffice
+    # Proprietary
+    wpsoffice
     # GPL-2.0-or-later / LGPL-2.1-or-later
     vlc
     # AGPL-3.0
