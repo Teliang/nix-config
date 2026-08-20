@@ -29,6 +29,8 @@
     nixfmt
 
     # --- Graphical Apps ---
+    # AGPL-3.0-only
+    rustdesk
     # GPL-3.0-or-later
     goldendict-ng
     # AGPL-3.0
