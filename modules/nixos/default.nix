@@ -5,10 +5,7 @@
   # my-module = import ./my-module.nix;
   core-packages = import ./core-packages.nix;
   gnome = import ./gnome.nix;
-  kde = import ./kde.nix;
-  cosmic = import ./cosmic.nix;
-  cinnamon = import ./cinnamon.nix;
-  xfce = import ./xfce.nix;
+  gnome-xrdp = import ./gnome-xrdp.nix;
 
   firefox = import ./firefox.nix;
   firefox-overrides = import ./firefox-overrides.nix;
@@ -17,10 +14,8 @@
   wireguard = import ./wireguard.nix;
   locale = import ./locale.nix;
   input-method = import ./input-method.nix;
-  niri = import ./niri.nix;
   lanmai = import ./lanmai.nix;
   samba = import ./samba.nix;
 
   server-packager = import ./server-packager.nix;
-  k3s = import ./k3s.nix;
 }

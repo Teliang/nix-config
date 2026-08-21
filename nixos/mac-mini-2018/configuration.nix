@@ -13,6 +13,7 @@
     # If you want to use modules your own flake exports (from modules/nixos):
     inputs.self.nixosModules.core-packages
     inputs.self.nixosModules.gnome
+    inputs.self.nixosModules.gnome-xrdp
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.input-method
     inputs.self.nixosModules.firefox
