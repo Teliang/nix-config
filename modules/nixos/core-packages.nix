@@ -100,6 +100,8 @@
     discord
     # GPL-3.0-or-later
     gimp
+    # mix licenses
+    kdePackages.kdenlive
     # GPL-2.0-or-later
     obs-studio
     # GPL-2.0-or-later
