@@ -29,8 +29,11 @@
     nixfmt
 
     # --- Graphical Apps ---
+
+    # GPL-2.0-or-later
+    nextcloud-client
     # AGPL-3.0-only
-    rustdesk
+    # rustdesk
     # GPL-3.0-or-later
     goldendict-ng
     # AGPL-3.0
@@ -55,6 +58,7 @@
           ms-python.debugpy
           ms-python.pylint
           ms-python.vscode-pylance
+          ms-python.vscode-python-envs
 
           rust-lang.rust-analyzer
 
@@ -65,6 +69,10 @@
           bbenoist.nix
           ms-azuretools.vscode-docker
           ms-vscode-remote.remote-ssh
+
+          # format
+          esbenp.prettier-vscode
+          oderwat.indent-rainbow
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
