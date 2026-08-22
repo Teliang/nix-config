@@ -261,6 +261,8 @@
     freerdp
     # GPL-2.0-only
     git
+    # Apache-2.0
+    subversionClient
     # GPL-2.0-only / LGPL-2.1-or-later
     qemu
     # MIT
