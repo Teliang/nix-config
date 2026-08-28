@@ -40,6 +40,11 @@ password=<PASSWORD>
 ### input
 ```
 curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install | rime_dir="$HOME/.local/share/fcitx5/rime"  bash -s -- iDvel/rime-ice
+
+# .local/share/fcitx5/rime/rime_ice.schema.yaml
+  - name: traditionalization
+    states: [简,繁]
+    reset: 1
 ```
 
 ### vim plugin
