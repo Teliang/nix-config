@@ -98,6 +98,8 @@
     calibre
     # Proprietary
     discord
+    slack
+    zoom-us
     # GPL-3.0-or-later
     gimp
     # mix licenses
