@@ -29,6 +29,8 @@
     yadm
     smartmontools
     python315
+    maven
+    gradle
   ];
 
   networking.networkmanager.enable = true;
