@@ -28,6 +28,7 @@
     tree
     yadm
     smartmontools
+    python315
   ];
 
   networking.networkmanager.enable = true;
@@ -46,6 +47,13 @@
     enable = true;
     clock24 = true;
   };
+
+  # GPL-2.0-with-classpath-exception (OpenJDK)
+  programs.java = {
+    enable = true;
+    package = pkgs.openjdk25;
+  };
+
 
   virtualisation.docker = {
     enable = true;
