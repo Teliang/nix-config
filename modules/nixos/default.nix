@@ -18,4 +18,5 @@
   samba = import ./samba.nix;
 
   server-packager = import ./server-packager.nix;
+  mask-acpi-gpe0F = import ./mask-acpi-gpe0F.nix;
 }

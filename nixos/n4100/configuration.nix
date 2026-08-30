@@ -14,7 +14,7 @@
     # inputs.self.nixosModules.example
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.server-packager
-    # inputs.self.nixosModules.k3s
+    inputs.self.nixosModules.mask-acpi-gpe0F
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-cpu-intel
