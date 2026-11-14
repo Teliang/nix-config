@@ -60,3 +60,32 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/authorized_keys
 ```
+
+
+## Install in mac-mini-2018
+```
+parted /dev/nvme0n1 -- mklabel gpt && \
+parted /dev/nvme0n1 -- mkpart root xfs 512MB -8GB && \
+parted /dev/nvme0n1 -- mkpart swap linux-swap -8GB 100% && \
+parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB && \
+parted /dev/nvme0n1 -- set 3 esp on && \
+mkfs.xfs -f -L nixos /dev/nvme0n1p1 && \
+mkswap -L swap /dev/nvme0n1p2  && \
+mkfs.fat -F 32 -n boot /dev/nvme0n1p3 && \
+mount /dev/disk/by-label/nixos /mnt && \
+mount --mkdir -o umask=077 /dev/disk/by-label/boot /mnt/boot && \
+swapon /dev/disk/by-label/swap
+
+
+nixos-generate-config --root /mnt
+
+cd /mnt/etc/nixos
+
+git clone https://github.com/teliang/nix-config
+
+cd nix-config
+
+# cp ../hardware-configuration.nix nixos/DOTO***
+
+nixos-install --flake .#mac-mini-2018
+```
