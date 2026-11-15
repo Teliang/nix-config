@@ -26,6 +26,9 @@
       "ankepacjgoajhjpenegknbefpmfffdic;https://clients2.google.com/service/update2/crx" # Hide shorts for Youtube
 
       "pfnededegaaopdmhkdmcofjmoldfiped;https://clients2.google.com/service/update2/crx" # Proxy SwitchyOmega 3 (ZeroOmega)
+
+      "ophjlpahpchlmihnnnihgmmeilfjmjjc;https://clients2.google.com/service/update2/crx"
+      # Line
     ];
 
     # https://chromeenterprise.google/policies
