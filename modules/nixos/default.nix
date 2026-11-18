@@ -16,6 +16,7 @@
   input-method = import ./input-method.nix;
   lanmai = import ./lanmai.nix;
   samba = import ./samba.nix;
+  docker = import ./docker.nix;
 
   server-packager = import ./server-packager.nix;
   mask-acpi-gpe0F = import ./mask-acpi-gpe0F.nix;

@@ -21,6 +21,7 @@
     inputs.self.nixosModules.chromium
     inputs.self.nixosModules.chromium-overrides
     inputs.self.nixosModules.samba
+    inputs.self.nixosModules.docker
 
     # Or modules from other flakes (such as nixos-hardware):
     inputs.nixos-hardware.nixosModules.common-pc-ssd

@@ -324,9 +324,4 @@
     enable = true;
     clock24 = true;
   };
-
-  # Apache-2.0
-  virtualisation.docker = {
-    # enable = true;
-  };
 }
